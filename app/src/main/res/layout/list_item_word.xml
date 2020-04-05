@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.Gravity" />
+
+        <variable
+            name="word"
+            type="hu.wuhanizer.notSoFar.model.Word" />
+        <variable
+            name="userId"
+            type="String" />
+        <variable
+            name="index"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="@{word.userId==userId ? Gravity.RIGHT : Gravity.LEFT}">
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_index"
+            android:layout_above="@+id/btn_new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{""+index+". szó"}'/>
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_new_game"
+            android:text="@{word.word}"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</layout>

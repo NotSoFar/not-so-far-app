@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="40dp"
+            android:textSize="30dp"
+            android:text="Level 1" />
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_counter_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="Feladatotok: \n\nAlkossatok minél hosszabb szóláncot úgy, hogy mindig az előző szó utolsó betűjével kezditek a következőt! \n\nFelváltva írhattok. 1 percetek van!" />
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_counter_info"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:textSize="25sp"
+            android:text="Várakozás... 10"
+            />
+
+    </RelativeLayout>
+</layout>

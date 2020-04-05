@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Not so Far</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">803425273499702</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb803425273499702</string>
+
+
+
+
+
+    <string name="no_network_connection" translatable="false">Nincs internet elérés</string>
+    <string name="unknown_error" translatable="false">Hiba történt</string>
+
+</resources>

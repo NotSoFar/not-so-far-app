@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:gravity="center">
+
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:layout_above="@+id/btn_new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="Ti tényleg jó csapat vagytok! \n\nÉrdemes lenne jobban megismerni egymást!"/>
+
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text=""/>
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Még játszanék"/>
+
+    </LinearLayout>
+</layout>

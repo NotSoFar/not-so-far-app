@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:gravity="center">
+
+        <hu.wuhanizer.notSoFar.ui.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:textSize="20sp"
+            android:text="Gratulálunk, az első szinten túljutottatok.\nJutalmatok 1-1 Healthpoint.\nHogy tetszett a közös játék?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <hu.wuhanizer.notSoFar.ui.view.TintableImageView
+                android:id="@+id/btn_negative"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:src="@drawable/btn_neagtive"
+                app:tintColorStateList="@drawable/image_view_selector"/>
+
+
+            <hu.wuhanizer.notSoFar.ui.view.TintableImageView
+                android:id="@+id/btn_neutral"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:src="@drawable/btn_neutral"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:tintColorStateList="@drawable/image_view_selector"/>
+
+
+            <hu.wuhanizer.notSoFar.ui.view.TintableImageView
+                android:id="@+id/btn_positive"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:src="@drawable/btn_positive"
+                app:tintColorStateList="@drawable/image_view_selector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

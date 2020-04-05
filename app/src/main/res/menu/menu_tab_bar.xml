@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_alerts"
+        android:enabled="true"
+        android:title="Játék"
+        android:icon="@drawable/ic_game"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_projects"
+        android:enabled="true"
+        android:icon="@drawable/ic_donate"
+        android:title="Adományok"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:title="Profil"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom" />
+
+</menu>
